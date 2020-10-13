@@ -1,0 +1,167 @@
+div.colonne div{
+  margin-top: 100px;
+  margin-left: 350px;
+  float: left;
+  height: 250px;
+  width: 525px;
+  padding: 5%;
+  color: grey;
+  background-color: #423189
+}
+div.centrare div {
+  margin-top: 20px;
+  margin-left: 350px;
+  float: left;
+  height: 250px;
+  width: 525px;
+  padding: 5%;
+}
+cent {
+  margin-left: 180px;
+}
+
+div.secondo div{
+  float: right;
+  height: 120px;
+  width: 540px;
+  padding: 5%;
+  color: grey;
+  background-color: lightblue
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+anim {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.rotazione{
+  transform: rotate(50deg);
+  transform: skewX(10deg);
+
+}
+.image {
+  position: relative;
+width: 100px;
+height: 100px;
+}
+.imageOne {
+  z-index: 1;
+}
+.imageTwo {
+  z-index: 0;
+}
+.opacizzare {
+  opacity: 0.5;
+}
+.bordo{
+ border: 5px;
+ padding: 100px;
+ border-style: double;
+}
+
+.parolee{
+  position: absolute;
+  color: #eee;
+  font: bold 22px Georgia;
+  padding:10px;
+  top: 100px;
+  left: 10;
+  width: 100%;
+}
+
+.SCRITTA {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 80px;
+}
+
+.bottone{
+  position: absolute;
+  margin-top: 290px;
+  font-style: oblique;
+  margin-left: -1px;
+}
+
+.menta{
+  z-index: 1;
+  position: absolute;
+  margin-left: 300px;
+}
+
+.fragola{
+  z-index: 2;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 200px;
+}
+
+@keyframes sposto {
+  from { margin-left: -340px;}
+  to{margin-left: 0px;}
+}
+
+.spostare {
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-name: sposto;
+  position: absolute;
+}
+
+@keyframes sposto2 {
+  from { margin-left: 340px;}
+  to{margin-left: 0px;}
+}
+
+.spostare2 {
+  animation-duration: 3s;
+  animation-name: sposto2;
+  position: absolute;
+}
+
+.parolementa {
+  margin-left: 700px;
+  position: absolute;
+  margin-top: 80px;
+}
+
+.parolefragola {
+  margin-left: 380px;
+  position: absolute;
+  margin-top:300px;
+}
+
+.titolo {
+  margin-top: -100px;
+  margin-left: 400px;
+  position: absolute;
+  font-style: italic;
+  font-size: 50px;
+
+}
