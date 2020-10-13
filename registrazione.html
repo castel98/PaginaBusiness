@@ -6,13 +6,16 @@
     <title> Registrazione </title>
   </head>
 
+<script>
+    function registra(){
+
+      var NomeRegi = document.getElementById("NomR").value;
+      var pasRegi = document.getElementById("pasR").value;
+      document.write(NomeRegi, pasRegi);
+    }
+</script>
   <body style="background-color:orange;">
 
-<script type="text/javascript">
-  function registra{
-    document.open();
-  }
-</script>
 
 
 
@@ -23,9 +26,9 @@
 <div class="bottoneregistrazione">
 REGISTRATI
 <p>
- NOME:  <input type="text" name="Nomereg" value="">
+ NOME:  <input type="text" name="Nomereg" value="" id="NomR">
  <p>
- PASSWORD: <input type="psw" name="Pswreg" value="">
+ PASSWORD: <input type="password" name="Pswreg" value="" id="pasR">
  <p>
  <input type="button" value="REGISTRATI" onclick="registra()">
 
