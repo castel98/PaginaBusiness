@@ -165,3 +165,18 @@ height: 100px;
   font-size: 50px;
 
 }
+
+.centrailregistro {
+  margin-top:150px;
+  margin-left: 300px;
+  background-color: lightblue;
+  height: 300px;
+  width: 800px;
+}
+
+.bottoneregistrazione{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 250px;
+
+}
