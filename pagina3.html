@@ -1,8 +1,22 @@
 <html>
 <link rel="stylesheet" type="text/css" href="fogliostile.css">
 <body>
-
-  <div class="imageTwo image">
+<script type="text/javascript">
+  Lprodotti = new Array;
+  function Prodottieprezzi(){
+    prodotti = new Array;
+    var prodotto = document.getElementById("lampone").value;
+    prodotti.push(prodotto);
+    document.write(prodotti)
+  }
+  function provacheck(){
+      document.write(Lprodotti);
+  }
+  function aggiungi(SingoloProd){
+   Lprodotti.push(SingoloProd);
+  }
+  </script>
+<div class="imageTwo image">
     <div class="opacizzare">
       <img src='/home/chiara/Scrivania/PaginaBusiness/biancoice.jpg'>
      </div>
@@ -12,18 +26,36 @@
   <div class="menta image">
     <img src='/home/chiara/Scrivania/PaginaBusiness/menta.jpg' height="250px"> </div>
   </h2>
-  <g class="parolementa">  <ul type="circle"> <li> menta </li>
-    <li> pistacchio </li>
-    <li> cioccolato </li>
+  <g class="parolementa">  <ul type="circle"> <li>
+    <p>
+    MENTA: <input type="checkbox" id = "menta" onclick="aggiungi('menta')" >
+  </li>
+  <p>
+    <li> PISTACCHIO: <input type="checkbox" id = "pistacchio" onclick="aggiungi('pistacchio')"> </li>
+    <p>
+    <li> CIOCCOLATO: <input type="checkbox" id = "cioccolato" onclick="aggiungi('cioccolato')"></li>
+
   </ul> </g>
   <h3 class="spostare2">
   <div class="fragola image">
       <img src='/home/chiara/Scrivania/PaginaBusiness/fragola.jpg' height="250px"> </div>
     </h3>
-    <g class="parolefragola">  <ul type="circle"> <li> fragola </li>
-      <li> lampone </li>
-      <li> mora </li>
+    <g class="parolefragola">  <ul type="circle"> <li>
+      FRAGOLA: <input type="checkbox" id = "fragola" onclick="aggiungi('fragola')">
+      </select>
+     </li>
+      <p>
+      <li> LAMPONE: <input type="checkbox" id = "lampone" onclick="aggiungi('lampone')">
+      </select>
+       </li>
+      <p>
+      <li> MORA: <input type="checkbox" id = "mora" onclick="aggiungi('mora')">
+      </select>
+<p>
+  <input type="button" value="ORDINA" onclick="provacheck()">
+
     </ul> </g>
+
 
 
 </html>
