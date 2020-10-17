@@ -71,3 +71,24 @@ function verifica(perspas)
       }
 
     }
+
+function checkcheckbox(){
+
+  inputs =document.getElementsByTagName("input");
+  selectProducts = new Array;
+  str= "";
+  for(var i = 0; i < inputs.length; i++)
+  {
+   if(inputs[i].type == "checkbox")
+   {
+      if(inputs[i].checked == true)
+      {
+          selectProducts.push(inputs[i].name);
+      }
+    }
+  }
+  for (var i = 0; i < selectProducts.length; i++) {
+    str = str + selectProducts[i] + " ";
+  }
+  document.write(str);
+}
